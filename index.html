@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="알람 및 오류코드를 검색하고 기본 점검 방법을 확인하세요.">
+    <title>알람 해결 가이드</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="알람 해결 가이드 홈">
+        <span class="brand-mark" aria-hidden="true">!</span>
+        <span>알람 해결 가이드</span>
+      </a>
+      <span class="topbar-note"><span class="status-dot"></span> 누구나 무료로 사용 가능</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="eyebrow"><span aria-hidden="true">●</span> 빠른 문제 해결</div>
+        <h1 id="page-title">알람 코드, 이제<br><span>쉽게 해결해 보세요.</span></h1>
+        <p class="hero-copy">기기에 표시된 오류코드를 입력하면 가능한 원인과 점검 순서를 안내해 드립니다.</p>
+
+        <form class="search-panel" id="search-form" role="search">
+          <label class="sr-only" for="error-code">오류코드 또는 증상</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="error-code" name="error-code" type="search" placeholder="예: AL-001 또는 센서 연결" autocomplete="off" spellcheck="false">
+          <button type="submit">해결 방법 찾기 <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="examples">
+          <span>예시 검색:</span>
+          <button type="button" class="example-chip" data-code="AL-001">AL-001</button>
+          <button type="button" class="example-chip" data-code="AL-002">AL-002</button>
+          <button type="button" class="example-chip" data-code="E-202">E-202</button>
+        </div>
+      </section>
+
+      <section class="content" aria-label="검색 결과와 자주 찾는 알람">
+        <div id="results" class="results" aria-live="polite" aria-atomic="true"></div>
+        <div class="popular-heading">
+          <div>
+            <p class="section-kicker">QUICK LOOKUP</p>
+            <h2>자주 찾는 알람</h2>
+          </div>
+          <span class="count-label" id="code-count"></span>
+        </div>
+        <div class="code-grid" id="code-list"></div>
+        <p class="disclaimer">
+          <span aria-hidden="true">ⓘ</span>
+          1010–1060 안내는 사용자가 제공한 매뉴얼 발췌를 요약했고, 나머지는 기능 예시입니다.
+          기종별 회로도와 공식 매뉴얼을 우선 확인하고, 전기·가동부 관련 작업은 자격을 갖춘 담당자에게 맡기세요.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>알람 해결 가이드</span>
+      <span>안전을 위해 장비 제조사의 공식 안내를 함께 확인하세요.</span>
+    </footer>
+  </body>
+</html>
