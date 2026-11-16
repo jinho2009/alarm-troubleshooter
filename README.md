@@ -10,6 +10,10 @@
 python3 -m http.server 8000
 ```
 
+## GitHub Pages 배포
+
+저장소의 **Settings → Pages → Build and deployment**에서 `Deploy from a branch`를 선택하고, 브랜치는 `main`, 폴더는 `/(root)`로 지정한 뒤 저장합니다. 게시가 완료되면 `https://jinho2009.github.io/alarm-troubleshooter/`에서 접속할 수 있습니다.
+
 ## 안내 범위
 
 - 1010–1060: 사용자가 제공한 매뉴얼 발췌를 요약한 알람 안내
